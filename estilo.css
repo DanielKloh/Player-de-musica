@@ -1,0 +1,144 @@
+*{    
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+buttonn{
+    background-color: inherit;
+    color: inherit;
+    border: none;
+    cursor: pointer;
+}
+
+body{
+    background-color: #5F9EA0;
+}
+
+.conteiner{
+    display: block;
+    background-color: #2F4F4F;
+    box-shadow: 5px 5px 15px rgb(87 85 85);
+    margin: 0 auto;
+    margin-top: 40px;
+    width: 60%;
+
+    text-align: center;
+    max-width: 1500px;
+    min-width: 200px;
+    border-radius: 5px;
+}
+
+h1{
+    padding-top: 3%;
+    font-size: 1.3rem;
+
+    margin-bottom: 50px;
+    color: white;
+}
+
+img{
+    width: 80%;
+    height: 80%;
+}
+
+#below-cover{
+    display: flex;
+    justify-content: space-between;
+    margin: 3%;
+    align-items: center;
+
+    color: white;
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+
+.nome_banda{
+    color: gray;
+    font-size: 1rem;
+
+    text-align: left;
+}
+
+#barra_progresso{
+    background-color: gray;
+
+    margin-top: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+
+    height: 3px;
+
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+#current-progress{
+    --progresso: 0%;
+    background-color: white;
+    height: inherit;
+    width: var(--progresso);
+
+    border-radius: inherit;
+}
+
+
+#buttom-conteiner{
+    display: flex;
+    justify-content: space-between;
+    
+    font-size: 1.3rem;
+
+    padding: 30px;
+
+    margin-bottom: 20px;
+    align-items: center;
+
+    color: white;
+}
+
+#back_music{
+    font-size: 2rem;
+}
+
+#play{
+    font-size: 2.3rem;
+}
+
+#next_music{
+    font-size: 2rem;
+}
+
+#progress_conteiner{
+    padding: 1%;
+    padding-bottom: 1em;
+}
+
+.button-active{
+    color: green;
+}
+
+#time-box{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: smaller;
+    margin-top: 0.5em;
+
+    color: white;
+
+    padding-left: 2%;
+    padding-right: 2%;
+
+    
+
+
+}
+
+.coracao{
+    border: none;
+    background-color: #2F4F4F;
+
+    color: white;
+}

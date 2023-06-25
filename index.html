@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daniel Music</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="estilo.css">
+</html>
+    
+</head>
+<body>
+
+  <section class="conteiner">
+
+      <h1>PLAYLIST</h1>
+  
+      <div class="alinha_centro tamanho">
+        <img id="capa_disco" alt="Capa da musica" src="capas_disco/late_night_talking.jpg">
+      </div>
+  
+      <audio id="song"  src="audio/late_night_talking.mp4" ontimeupdate="atualizarBarraProgrsso(), updateTime()" onended="repetirORnext()" onloadeddata="updateTotalTime()"></audio>
+
+      <div id="below-cover">
+        <div class="song-info">
+          <h2 id="song-name">late Night Talking</h2>
+          <h2 id="nome_banda" class="nome_banda">Harry Styles</h2>
+        </div>
+        <button class="coracao"><i class="bi bi-heart-fill"></i></button>
+      </div>
+  
+      <div onclick="avancar()" id="progress_conteiner">
+        <div id="barra_progresso">
+          <div id="current-progress"></div>
+        </div>
+      </div>
+      <div id="time-box">
+        <div id="song-time">00:00:00</div>
+        <div id="total-time">00:00:00</div>
+      </div>
+  
+      <div id="buttom-conteiner" class="button">
+        <buttonn onclick="embaralharPlaylist()" id="random_music"><i class="bi bi-shuffle"></i></buttonn>
+        <buttonn onclick="voltar_musica()" id="back_music" class="button"><i class="bi bi-skip-start"></i></i></buttonn>
+        <buttonn onclick="playDecisao()" id="play" class="button"><i class=" bi bi-play-circle-fill"></i></buttonn>
+        <buttonn onclick="avancar_musica()" id="next_music" class="button"><i class="bi bi-skip-end"></i></buttonn>
+        <buttonn onclick="repetirMusica()" id="repeat_music" class=""><i class="bi bi-repeat"></i></buttonn>
+      </div>
+
+  </section>
+
+  <script src="script.js"></script>
+  
+</body>
+</html>
